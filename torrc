@@ -1,4 +1,4 @@
-HiddenServiceDir /home/user/hidden
+HiddenServiceDir /hidden
 HiddenServicePort 18181 172.17.0.1:22
 # for additional security with "HidServAuth hostaddress.onion authcookie" on the client side
 #HiddenServiceAuthorizeClient stealth clientname

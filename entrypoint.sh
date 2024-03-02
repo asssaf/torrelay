@@ -4,7 +4,7 @@ set -eu
 
 /usr/bin/tor &
 
-HIDDEN="/home/user/hidden"
+HIDDEN="/hidden"
 
 
 while [ ! -e "$HIDDEN/hostname" ]
