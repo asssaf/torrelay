@@ -6,10 +6,10 @@ RUN apk add --no-cache openssh
 
 COPY torrc /etc/tor/torrc
 
-RUN adduser -D user
-
 COPY entrypoint.sh /entrypoint.sh
 
-USER user
+VOLUME /var/lib/tor
+
+USER tor
 
 ENTRYPOINT [ "/entrypoint.sh" ]
