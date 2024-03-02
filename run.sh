@@ -4,7 +4,7 @@ VOLUME="${PWD}/hidden"
 mkdir -p "$VOLUME"
 chmod 0700 $VOLUME
 
-docker run --name torrelay -it \
+docker run --name torrelay -d -it \
 	-v "${VOLUME}:/home/user/hidden" \
 	--restart=unless-stopped \
 	${IMAGE}
