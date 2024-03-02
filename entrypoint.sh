@@ -2,7 +2,7 @@
 
 set -eu
 
-su -c "/usr/bin/tor" user &
+/usr/bin/tor &
 
 HIDDEN="/home/user/hidden"
 

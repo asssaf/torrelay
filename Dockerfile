@@ -10,4 +10,6 @@ RUN adduser -D user
 
 COPY entrypoint.sh /entrypoint.sh
 
+USER user
+
 ENTRYPOINT [ "/entrypoint.sh" ]
