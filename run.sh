@@ -1,5 +1,5 @@
 VOLUME="${PWD}/hidden"
-: ${IMAGE:="asssaf/torrelay"}
+: ${IMAGE:="ghcr.io/asssaf/torrelay:master"}
 
 mkdir -p "$VOLUME"
 chmod 0700 $VOLUME
